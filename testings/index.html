@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="success.css" />
+  </head>
+  <body>
+    <div class="card-container" id="card-container">
+      <section class="card">
+        <figure class="card-star rating-button">
+          <img src="./images/icon-star.svg" alt="star icon" />
+        </figure>
+        <section class="card-header">
+          <header class="card-title margin">
+            <h1>How did we do?</h1>
+          </header>
+          <p class="card-description margin">
+            Please let us know how we did with your support <br />
+            request. All feedback is appreciated to help us <br />improve our
+            offering!
+          </p>
+        </section>
+        <section class="card-rating margin">
+          <div class="rating-container">
+            <button class="rating-button button-hover active" id="1">1</button>
+            <button class="rating-button button-hover active" id="2">2</button>
+            <button class="rating-button button-hover active" id="3">3</button>
+            <button class="rating-button button-hover active" id="4">4</button>
+            <button class="rating-button button-hover active" id="5">5</button>
+          </div>
+        </section>
+        <section class="card-submit">
+          <button class="submit-button button-hover" id="submit">SUBMIT</button>
+        </section>
+      </section>
+    </div>
+    <div class="card-container card-success" id="success-card">
+      <section class="card">
+        <figure class="success-image">
+          <img src="./images/illustration-thank-you.svg" alt="Succes iamge" />
+        </figure>
+        <section class="rating-result">
+          <p>You selected <span id="rating-number"></span> out of 5</p>
+        </section>
+
+        <section class="card-header">
+          <header class="card-title margin">
+            <h1>Thank you!</h1>
+          </header>
+          <p class="card-description margin">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </section>
+      </section>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
